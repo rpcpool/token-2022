@@ -1,6 +1,6 @@
 //! Error types
 
-#[cfg(not(target_os = "solana"))]
+#[cfg(not(any(target_os = "solana", target_arch = "wasm32")))]
 use spl_token_confidential_transfer_proof_generation::errors::TokenProofGenerationError;
 use {
     num_derive::FromPrimitive,
@@ -457,7 +457,7 @@ impl PrintProgramError for TokenError {
     }
 }
 
-#[cfg(not(target_os = "solana"))]
+#[cfg(not(any(target_os = "solana", target_arch = "wasm32")))]
 impl From<TokenProofGenerationError> for TokenError {
     fn from(e: TokenProofGenerationError) -> Self {
         match e {
