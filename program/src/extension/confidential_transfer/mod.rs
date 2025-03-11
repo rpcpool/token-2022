@@ -37,7 +37,7 @@ pub mod processor;
 pub mod verify_proof;
 
 /// Confidential Transfer Extension account information needed for instructions
-#[cfg(not(target_os = "solana"))]
+#[cfg(not(any(target_os = "solana", target_arch = "wasm32")))]
 pub mod account_info;
 
 /// ElGamal ciphertext containing an account balance
