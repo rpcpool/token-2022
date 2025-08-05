@@ -1,6 +1,6 @@
 [package]
 name = "spl-token-2022"
-version = "7.0.0"
+version = "8.0.0"
 description = "Solana Program Library Token 2022"
 documentation = "https://docs.rs/spl-token-2022"
 readme = "README.md"
@@ -45,7 +45,7 @@ solana-system-interface = "1.0.0"
 solana-zk-sdk = "2.2.0"
 spl-elgamal-registry = { version = "0.1.1", path = "../confidential-transfer/elgamal-registry", features = ["no-entrypoint"] }
 spl-memo = { version = "6.0", features = ["no-entrypoint"] }
-spl-token = { version = "7.0", features = ["no-entrypoint"] }
+spl-token = { version = "8.0", features = ["no-entrypoint"] }
 spl-token-confidential-transfer-ciphertext-arithmetic = { version = "0.2.1", path = "../confidential-transfer/ciphertext-arithmetic" }
 spl-token-confidential-transfer-proof-extraction = { version = "0.2.1", path = "../confidential-transfer/proof-extraction" }
 spl-token-group-interface = { version = "0.5.0" }
