@@ -1,23 +1,15 @@
 "updates":
-- "commit-message":
-    "prefix": "chore(deps):"
-  "directory": "/"
-  "labels":
-  - "dependencies"
+- "directory": "/"
   "open-pull-requests-limit": 6
   "package-ecosystem": "cargo"
   "schedule":
     "interval": "daily"
     "time": "08:00"
     "timezone": "UTC"
-- "commit-message":
-    "prefix": "chore(deps):"
-  "directories":
+- "directories":
   - "/"
   - "/clients/js"
   - "/clients/js-legacy"
-  "labels":
-  - "dependencies"
   "open-pull-requests-limit": 6
   "package-ecosystem": "npm"
   "schedule":
